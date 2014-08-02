@@ -1,0 +1,16 @@
+homepage:
+    pattern:   /
+    defaults:  { _controller: AcmeAuthBundle:User:index }
+    
+acme_resource:
+    resource: "@AcmeResourceBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/
+    requirements:
+        _locale: en|fr|de
+
+acme_auth:
+    resource: "@AcmeAuthBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/
+    requirements:
+        _locale: en|fr|de
+

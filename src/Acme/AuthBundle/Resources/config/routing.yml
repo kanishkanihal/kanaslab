@@ -1,0 +1,4 @@
+AcmeAuthBundle_auth_user:
+    resource: "@AcmeAuthBundle/Resources/config/routing/user.yml"
+    prefix:   /auth/user
+
